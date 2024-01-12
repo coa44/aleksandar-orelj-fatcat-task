@@ -19,7 +19,11 @@
         "strictNullChecks": true,
         "noImplicitThis": true,
         "skipDefaultLibCheck": true,
-        "noEmitOnError": true
+        "noEmitOnError": true,
+        "baseUrl": "./src",
+        "paths": {
+            "@components/*": ["components/*"]
+        }
     },
     "include": ["src"]
 }
