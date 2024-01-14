@@ -25,7 +25,7 @@
 
 ## Requirements
 
--   [Node.JS & NPM](https://nodejs.org/en/). Node 18 or higher is required
+-   [Node.JS & NPM](https://nodejs.org/en/). Node 18 or higher is recomended
 
 ## Installation guides
 
