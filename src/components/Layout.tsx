@@ -2,8 +2,8 @@ import React from 'react';
 
 import clsx from 'clsx';
 
-interface LayoutProps {
-    children: React.ReactNode;
+export interface LayoutProps {
+    children?: React.ReactNode;
     background: string;
 }
 

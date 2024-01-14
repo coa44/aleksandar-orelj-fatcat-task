@@ -8,7 +8,7 @@ interface Item {
     image: string;
 }
 
-interface PanelShowcaseProps {
+export interface PanelShowcaseProps {
     items: Array<Item>;
 }
 
@@ -25,9 +25,9 @@ export const PanelShowcase: React.FC<PanelShowcaseProps> = ({ items }) => {
                     'items-center'
                 )}
             >
-                {items.map(({ title, description, image }) => (
+                {items.map(({ title, description, image }, index) => (
                     <div
-                        key={title}
+                        key={index}
                         className={clsx(
                             'flex',
                             'flex-col',

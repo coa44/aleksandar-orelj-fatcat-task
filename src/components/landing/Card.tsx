@@ -5,10 +5,10 @@ import clsx from 'clsx';
 interface CardProps {
     title: string;
     text: string;
-    link: string;
+    action: () => void;
 }
 
-export const Card: React.FC<CardProps> = ({ title, text, link }) => (
+export const Card: React.FC<CardProps> = ({ title, text, action }) => (
     <div
         className={clsx(
             'flex',
@@ -34,8 +34,8 @@ export const Card: React.FC<CardProps> = ({ title, text, link }) => (
         <p className={clsx('text-gray80', 'text-base', 'leading-relaxed')}>
             {text}
         </p>
-        <a
-            href={link}
+        <button
+            onClick={action}
             className={clsx(
                 'mt-auto',
                 'flex',
@@ -44,8 +44,8 @@ export const Card: React.FC<CardProps> = ({ title, text, link }) => (
                 'gap-2.5'
             )}
         >
-            Read more
+            Show Result
             <img src="/media/landing/arrow-purple.svg" alt="" />
-        </a>
+        </button>
     </div>
 );

@@ -5,7 +5,7 @@ interface ShowcaseItem {
     description: string;
 }
 
-interface ItemsShowcaseProps {
+export interface ItemsShowcaseProps {
     items: Array<ShowcaseItem>;
 }
 
